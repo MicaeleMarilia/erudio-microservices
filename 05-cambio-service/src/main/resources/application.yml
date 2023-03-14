@@ -6,8 +6,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/cambio_service?useTimezone=true&serverTimezone=UTC
-    username: root
-    password: admin123
+    username: curso
+    password: Curso123*
   jpa:
     hibernate:
       ddl-auto: update
@@ -18,5 +18,8 @@ spring:
   flyway:
     url: jdbc:mysql://localhost:3306/
     schemas: cambio_service
-    user: root
-    password: admin123
+    user: curso
+    password: Curso123*
+  sleuth:
+    sampler:
+      probability: 1.0
